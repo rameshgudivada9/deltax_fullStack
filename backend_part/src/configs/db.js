@@ -1,5 +1,7 @@
 const mongoose=require("mongoose");
 
-mongoose.exports=()=>{
-    return mongoose.connect(" mongodb://127.0.0.1:27017");
-}
+const mongooseConnect=()=>{
+    return mongoose.connect("mongodb+srv://crimecheck:crimecheck123@cluster0.dgqt2r3.mongodb.net/?retryWrites=true&w=majority");
+};
+
+module.exports=mongooseConnect;
