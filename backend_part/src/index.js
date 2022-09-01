@@ -13,7 +13,7 @@ const artistController=require("./controllers/artist.controller")
 
 app.use("/api/v1/user",userController);
 app.use("/api/v1/poster",posterController);
-// app.use("/api/v1/songs",songsController);
+app.use("/api/v1/songs",songsController);
 app.use("/api/v1/artist",artistController);
 
 module.exports = app;
